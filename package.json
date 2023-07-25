@@ -1,0 +1,25 @@
+{
+  "name": "adbt",
+  "displayName": "ADBT",
+  "description": "ADBT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "adbt",
+      "aliases": ["Adblock template", "adbt"],
+      "extensions": [".adbt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "adbt",
+      "scopeName": "source.adbt",
+      "path": "./syntaxes/adbt.tmLanguage.json"
+    }]
+  }
+}
