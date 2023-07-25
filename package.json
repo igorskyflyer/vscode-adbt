@@ -1,36 +1,52 @@
 {
-  "name": "adbt",
-  "displayName": "ADBT",
-  "description": "ADBT",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "adbt",
-      "aliases": ["Adblock template", "adbt"],
-      "extensions": [".adbt"],
-      "configuration": "./language-configuration.json"
-    },{
-			"id": "adbt-meta",
-			"aliases": ["adbt.meta"],
-			"extensions": [".adbt.meta"],
-			// "configuration": "./language-configuration.json"
-		}],
-    "grammars": [{
-      "language": "adbt",
-      "scopeName": "source.adbt",
-      "path": "./syntaxes/adbt.tmLanguage.json"
-    }],
+	"name": "adbt",
+	"displayName": "ADBT",
+	"description": "ADBT",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "adbt",
+				"aliases": [
+					"Adblock template",
+					"adbt"
+				],
+				"extensions": [
+					".adbt"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "adbt-meta",
+				"aliases": [
+					"Adblock meta",
+					"adbt.meta"
+				],
+				"extensions": [
+					".adbt.meta"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "adbt",
+				"scopeName": "source.adbt",
+				"path": "./syntaxes/adbt.tmLanguage.json"
+			}
+		],
 		"jsonValidation": [
 			{
-				"fileMatch": ["*.adbt.meta"],
-				"url": "./adbt-meta-schema.json"
+				"fileMatch": [
+					"*.adbt.meta"
+				],
+				"url": "./meta/adbt-meta-schema.json"
 			}
 		]
-  }
+	}
 }
