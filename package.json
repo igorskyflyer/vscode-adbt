@@ -15,11 +15,22 @@
       "aliases": ["Adblock template", "adbt"],
       "extensions": [".adbt"],
       "configuration": "./language-configuration.json"
-    }],
+    },{
+			"id": "adbt-meta",
+			"aliases": ["adbt.meta"],
+			"extensions": [".adbt.meta"],
+			// "configuration": "./language-configuration.json"
+		}],
     "grammars": [{
       "language": "adbt",
       "scopeName": "source.adbt",
       "path": "./syntaxes/adbt.tmLanguage.json"
-    }]
+    }],
+		"jsonValidation": [
+			{
+				"fileMatch": ["*.adbt.meta"],
+				"url": "./adbt-meta-schema.json"
+			}
+		]
   }
 }
