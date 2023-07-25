@@ -21,16 +21,6 @@
 					".adbt"
 				],
 				"configuration": "./language-configuration.json"
-			},
-			{
-				"id": "adbt-meta",
-				"aliases": [
-					"Adblock meta",
-					"adbt.meta"
-				],
-				"extensions": [
-					".adbt.meta"
-				]
 			}
 		],
 		"grammars": [
