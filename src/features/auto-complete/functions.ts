@@ -41,5 +41,5 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
   itemNl.detail = 'nl (LF)'
   itemNl.documentation = 'Inserts a blank newline (LF).'
 
-  return [itemInclude, itemInclude, itemExport, itemNl]
+  return [itemInclude, itemHeader, itemExport, itemNl]
 }
