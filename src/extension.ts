@@ -19,7 +19,9 @@ function provideCompletionItems() {
   )
 
   itemInclude.detail = 'Include a filter file.'
-  itemInclude.insertText = "include ''"
+  itemInclude.insertText = new vscode.SnippetString(
+    "include '${1:<filter_path>}'"
+  )
 
   itemHeader.detail = 'Include a header file.'
   itemHeader.insertText = "header ''"
