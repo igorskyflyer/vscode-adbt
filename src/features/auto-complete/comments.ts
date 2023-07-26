@@ -17,5 +17,13 @@ export function getCommentModifiers(): vscode.CompletionItem[] {
   itemFixMe.documentation = 'A FIXME comment label.'
   itemFixMe.insertText = 'FIXME: '
 
-  return [itemTodo, itemFixMe]
+  const itemNote: vscode.CompletionItem = new vscode.CompletionItem(
+    'NOTE',
+    vscode.CompletionItemKind.Text
+  )
+  itemNote.detail = 'NOTE'
+  itemNote.documentation = 'A NOTE comment label.'
+  itemNote.insertText = 'NOTE: '
+
+  return [itemTodo, itemFixMe, itemNote]
 }
