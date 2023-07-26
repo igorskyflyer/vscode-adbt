@@ -16,7 +16,7 @@ function provideCompletionItems() {
     'header',
     vscode.CompletionItemKind.Function
   )
-  itemHeader.detail = 'Include a header file.'
+  itemHeader.detail = 'header path: string'
   itemHeader.insertText = new vscode.SnippetString(
     "header '${1:<header_path>}'"
   )
