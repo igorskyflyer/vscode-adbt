@@ -23,10 +23,11 @@
 	"files": [
 		"dist",
 		"meta",
+		"syntaxes",
 		"assets/aria.png"
 	],
 	"main": "./dist/extension.js",
-	"icon": "./assets/aria.png",
+	"icon": "assets/aria.png",
 	"galleryBanner": {
 		"color": "#https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/assets/aria.png",
 		"theme": "dark"
