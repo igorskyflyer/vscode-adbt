@@ -1,5 +1,5 @@
 import * as vscode from 'vscode'
-import { getCommentModifiers } from './comment-modifiers'
+import { getCommentModifiers } from './commentModifiers'
 import { getComments } from './comments'
 import { getAriaFunctions } from './functions'
 import { tokenType } from './tokenType'
