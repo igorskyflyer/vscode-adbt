@@ -5,7 +5,7 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
     'include',
     vscode.CompletionItemKind.Function
   )
-  itemInclude.detail = 'include path: string'
+  itemInclude.detail = 'include filter_path: string'
   itemInclude.insertText = new vscode.SnippetString(
     "include '${1:<filter_path>}'"
   )
@@ -16,7 +16,7 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
     'header',
     vscode.CompletionItemKind.Function
   )
-  itemHeader.detail = 'header path: string'
+  itemHeader.detail = 'header header_path: string'
   itemHeader.insertText = new vscode.SnippetString(
     "header '${1:<header_path>}'"
   )
@@ -28,7 +28,7 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
     vscode.CompletionItemKind.Function
   )
 
-  itemExport.detail = 'export path: string'
+  itemExport.detail = 'export file_path: string'
   itemExport.insertText = new vscode.SnippetString("export '${1:<file_path>}'")
   itemExport.documentation =
     "Exports all rules to the provided filepath. If the path argument doesn't exist or is invalid, Aria will abort compilation."
