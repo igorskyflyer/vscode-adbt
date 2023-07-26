@@ -5,6 +5,13 @@ function provideCompletionItems() {
     'include',
     vscode.CompletionItemKind.Function
   )
+  itemInclude.detail = 'include path: string'
+  itemInclude.insertText = new vscode.SnippetString(
+    "include '${1:<filter_path>}'"
+  )
+  itemInclude.documentation =
+    "Includes a filter file. If the path argument doesn't exist or is invalid, Aria will abort compilation."
+
   const itemHeader: vscode.CompletionItem = new vscode.CompletionItem(
     'header',
     vscode.CompletionItemKind.Function
@@ -16,11 +23,6 @@ function provideCompletionItems() {
   const itemNl: vscode.CompletionItem = new vscode.CompletionItem(
     'nl',
     vscode.CompletionItemKind.Function
-  )
-
-  itemInclude.detail = 'Include a filter file.'
-  itemInclude.insertText = new vscode.SnippetString(
-    "include '${1:<filter_path>}'"
   )
 
   itemHeader.detail = 'Include a header file.'
