@@ -27,13 +27,16 @@ function provideCompletionItems() {
     'export',
     vscode.CompletionItemKind.Function
   )
+
+  itemExport.detail = 'export path: string'
+  itemExport.insertText = new vscode.SnippetString("export '${1:<file_path>}'")
+  itemExport.documentation =
+    "Export all rules to the provided filepath. If the path argument doesn't exist or is invalid, Aria will abort compilation."
+
   const itemNl: vscode.CompletionItem = new vscode.CompletionItem(
     'nl',
     vscode.CompletionItemKind.Function
   )
-
-  itemExport.detail = 'Export all rules to a filter file.'
-  itemExport.insertText = new vscode.SnippetString("export '${1:<file_path>}'")
 
   itemNl.detail = 'Insert a blank newline.'
 
