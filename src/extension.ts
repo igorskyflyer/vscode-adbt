@@ -24,7 +24,9 @@ function provideCompletionItems() {
   )
 
   itemHeader.detail = 'Include a header file.'
-  itemHeader.insertText = "header ''"
+  itemHeader.insertText = new vscode.SnippetString(
+    "header '${1:<header_path>}'"
+  )
 
   itemExport.detail = 'Export all rules to a filter file.'
   itemExport.insertText = "export ''"
