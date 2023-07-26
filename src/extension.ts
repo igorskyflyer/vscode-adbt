@@ -2,6 +2,7 @@ import * as vscode from 'vscode'
 import { getAriaFunctions } from './features/auto-complete/functions'
 import { tokenType } from './features/auto-complete/tokenType'
 import { getCommentModifiers } from './features/auto-complete/comment-modifiers'
+import { getComments } from './features/auto-complete/comments'
 
 function provideCompletionItems(
   document: vscode.TextDocument,
@@ -17,7 +18,7 @@ function provideCompletionItems(
   ) {
     items.push(...getCommentModifiers())
   } else {
-    items.push(...getAriaFunctions())
+    items.push(...getAriaFunctions(), ...getComments())
   }
 
   return items
