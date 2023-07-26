@@ -24,6 +24,7 @@ Currently it provides the following features:
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
 - hover information,
+- snippets,
 - meta files `*.adbt.meta` support, relies on built-in JSON support:
   - autocomplete (Intellisense), see the [official specification](hhttps://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) for details,
   - hover info.
