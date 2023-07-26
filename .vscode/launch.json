@@ -9,7 +9,7 @@
 			"name": "Extension",
 			"type": "extensionHost",
 			"request": "launch",
-			"preLaunchTask": "build",
+			// "preLaunchTask": "build",
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"
 			],
