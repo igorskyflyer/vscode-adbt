@@ -1,32 +1,93 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Adblock template",
+	"name": "Adbt",
+	"scopeName": "source.adbt",
+	"fileTypes": [
+		"adbt"
+	],
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
 		},
 		{
-			"include": "#strings"
+			"include": "#directives"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.adbt",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.adbt",
-			"begin": "\"",
-			"end": "\"",
+		"comments": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.adbt",
-					"match": "\\\\."
+					"name": "comment.exported.adbt",
+					"begin": "#",
+					"end": "$",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.adbt"
+						}
+					}
+				},
+				{
+					"name": "comment.internal.adbt",
+					"begin": "@",
+					"end": "$",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.adbt"
+						}
+					}
+				}
+			]
+		},
+		"directives": {
+			"patterns": [
+				{
+					"name": "directive.include.adbt",
+					"begin": "include\\s+",
+					"end": "('.*')$",
+					"captures": {
+						"0": {
+							"name": "storage.type.function.adbt"
+						},
+						"1": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				},
+				{
+					"name": "directive.header.adbt",
+					"begin": "header\\s+",
+					"end": "('.*')$",
+					"captures": {
+						"0": {
+							"name": "storage.type.function.adbt"
+						},
+						"1": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				},
+				{
+					"name": "directive.export.adbt",
+					"begin": "export\\s+",
+					"end": "('.*')$",
+					"captures": {
+						"0": {
+							"name": "storage.type.function.adbt"
+						},
+						"1": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				},
+				{
+					"name": "directive.newline.adbt",
+					"match": "^\\s*nl\\s*$",
+					"captures": {
+						"0": {
+							"name": "storage.type.function.adbt"
+						}
+					}
 				}
 			]
 		}
-	},
-	"scopeName": "source.adbt"
+	}
 }
