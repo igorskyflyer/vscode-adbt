@@ -7,13 +7,13 @@
 Currently it provides the following features:
 
 - language support and encoding for `*.adbt` files,
-- syntax highlighting,
+- syntax highlighting (see the [official specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details),
 - auto-complete (Intellisense):
   - functions/statements,
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
 - hover information,
-- meta files `*.adbt.meta` support (relies on built-in JSON support):
-  - autocomplete (Intellisense),
+- meta files `*.adbt.meta` support, relies on built-in JSON support:
+  - autocomplete (Intellisense), see the [official specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details,
   - hover info.
 
 <br>
