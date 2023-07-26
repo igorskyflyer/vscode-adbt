@@ -25,6 +25,21 @@
 	],
 	"main": "./dist/extension.js",
 	"icon": "./assets/adbt.png",
+	"galleryBanner": {
+		"color": "#001140",
+		"theme": "dark"
+	},
+	"keywords": [
+		"adbt",
+		"adblock",
+		"template",
+		"engine",
+		"adblock-template",
+		"compile",
+		"syntax-highlight",
+		"utility",
+		"igordvlpr"
+	],
 	"contributes": {
 		"configurationDefaults": {
 			"[adbt]": {
