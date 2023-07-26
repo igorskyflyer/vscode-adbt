@@ -34,13 +34,13 @@ As mentioned above, this extension provides ADBT support in Visual Studio Code b
 Globally,
 
 ```shell
-npm i -g '@igor.dvlpr/aria'
+npm i -g "@igor.dvlpr/aria"
 ```
 
 or locally,
 
 ```shell
-npm i '@igor.dvlpr/aria'
+npm i "@igor.dvlpr/aria"
 ```
 
 <br>
