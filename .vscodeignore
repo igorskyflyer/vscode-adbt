@@ -3,5 +3,6 @@
 .github/**
 assets/screenshots/**
 src/**
+out/**
 .gitignore
 tsconfig.json
