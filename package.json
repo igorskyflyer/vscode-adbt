@@ -15,7 +15,8 @@
 	],
 	"files": [
 		"dist",
-		"meta"
+		"meta",
+		"assets/adbt.png"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
