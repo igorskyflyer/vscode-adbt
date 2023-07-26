@@ -1,6 +1,7 @@
 # ADBT 🦄
 
 Adblock template support for Visual Studio Code
+<sub>for <a href="https://github.com/igorskyflyer/vscode-adbt/tree/main#readme">Aria compiler</a></sub>
 
 <br>
 
