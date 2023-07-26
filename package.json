@@ -1,6 +1,6 @@
 {
 	"name": "adbt",
-	"displayName": "ADBT (Adblock template)",
+	"displayName": "Adblock template support (ADBT)",
 	"publisher": "igordvlpr",
 	"description": "📜 Provides ADBT (Adblock template) support in Visual Studio Code. 🪅",
 	"version": "1.0.0",
