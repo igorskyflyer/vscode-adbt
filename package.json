@@ -66,5 +66,14 @@
 		"@types/vscode": "^1.80.0",
 		"typescript": "^5.1.6",
 		"esbuild": "^0.18.17"
-	}
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/igorskyflyer/vscode-adbt/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/igorskyflyer/vscode-adbt.git"
+	},
+	"homepage": "https://github.com/igorskyflyer/vscode-adbt/blob/main/README.md"
 }
