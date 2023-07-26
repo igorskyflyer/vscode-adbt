@@ -54,7 +54,7 @@ npm i "@igor.dvlpr/aria"
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/assets/screenshots/intellisense.png" alt="ADBT - auto-complete, Intellisense">
-	<sub>Intellisense - auto-complete, including comment modifiers</sub>
+	<sub><strong>Intellisense - auto-complete, including comment modifiers</strong></sub>
 	<br>
 	<sub>Visual Studio Code theme: <a href="https://github.com/igorskyflyer/vscode-theme-kai"><code>Kai</code></a></sub>
 </p>
@@ -63,7 +63,7 @@ npm i "@igor.dvlpr/aria"
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/assets/screenshots/syntax.png" alt="ADBT - auto-complete, Intellisense">
-	<sub>Syntax highlighting</sub>
+	<sub><strong>Syntax highlighting</strong></sub>
 	<br>
 	<sub>Visual Studio Code theme: <a href="https://github.com/igorskyflyer/vscode-theme-kai"><code>Kai</code></a></sub>
 </p>
