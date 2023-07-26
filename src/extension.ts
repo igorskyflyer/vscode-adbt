@@ -38,7 +38,8 @@ function provideCompletionItems() {
     vscode.CompletionItemKind.Function
   )
 
-  itemNl.detail = 'Insert a blank newline.'
+  itemNl.detail = 'nl (LF)'
+  itemNl.documentation = 'Inserts a blank newline (LF).'
 
   return [itemInclude, itemExport, itemNl]
 }
