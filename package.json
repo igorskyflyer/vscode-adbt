@@ -11,7 +11,9 @@
 		"Programming Languages"
 	],
 	"activationEvents": [
-		"onLanguage:adbt"
+		"onLanguage:adbt",
+		"workspaceContains:**/*.adbt",
+		"workspaceContains:**/*.adbt.meta"
 	],
 	"extensionKind": [
 		"workspace"
