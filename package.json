@@ -75,6 +75,12 @@
 				],
 				"url": "./meta/adbt-meta-schema.json"
 			}
+		],
+		"snippets": [
+			{
+				"language": "adbt",
+				"path": "./snippets/adbt-snippets.json"
+			}
 		]
 	},
 	"scripts": {
