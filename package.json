@@ -23,12 +23,12 @@
 	"files": [
 		"dist",
 		"meta",
-		"assets/adbt.png"
+		"assets/aria.png"
 	],
 	"main": "./dist/extension.js",
-	"icon": "./assets/adbt.png",
+	"icon": "./assets/aria.png",
 	"galleryBanner": {
-		"color": "#001140",
+		"color": "#https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/assets/aria.png",
 		"theme": "dark"
 	},
 	"keywords": [
