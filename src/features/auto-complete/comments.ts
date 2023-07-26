@@ -9,9 +9,5 @@ export function getCommentModifiers(): vscode.CompletionItem[] {
   itemTodo.documentation = 'A TODO comment label.'
   itemTodo.insertText = 'TODO: '
 
-  // new vscode.CompletionItem('TODO: '),
-  //       new vscode.CompletionItem('FIXME: '),
-  //       new vscode.CompletionItem('NOTE: '),
-
   return [itemTodo]
 }
