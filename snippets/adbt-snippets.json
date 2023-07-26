@@ -1,0 +1,17 @@
+{
+	"Adblock template": {
+		"prefix": "adbt",
+		"body": [
+			"@ Filter",
+			"",
+			"header '${1:header_path}'",
+			"",
+			"nl",
+			"",
+			"include '${2:filter_path}'",
+			"",
+			"export '${3:file_path}'"
+		],
+		"description": "Boilerplate for an Adblock template."
+	}
+}
