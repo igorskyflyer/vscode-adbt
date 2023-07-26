@@ -16,6 +16,13 @@ function provideCompletionItems() {
     'header',
     vscode.CompletionItemKind.Function
   )
+  itemHeader.detail = 'Include a header file.'
+  itemHeader.insertText = new vscode.SnippetString(
+    "header '${1:<header_path>}'"
+  )
+  itemHeader.documentation =
+    "Includes a header file. If the path argument doesn't exist or is invalid, Aria will abort compilation."
+
   const itemExport: vscode.CompletionItem = new vscode.CompletionItem(
     'export',
     vscode.CompletionItemKind.Function
@@ -23,11 +30,6 @@ function provideCompletionItems() {
   const itemNl: vscode.CompletionItem = new vscode.CompletionItem(
     'nl',
     vscode.CompletionItemKind.Function
-  )
-
-  itemHeader.detail = 'Include a header file.'
-  itemHeader.insertText = new vscode.SnippetString(
-    "header '${1:<header_path>}'"
   )
 
   itemExport.detail = 'Export all rules to a filter file.'
