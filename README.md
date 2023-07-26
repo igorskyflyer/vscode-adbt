@@ -1,4 +1,6 @@
-# ADBT (Adblock template) 🦄
+# ADBT 🦄
+
+Adblock template support for Visual Studio Code
 
 <br>
 
