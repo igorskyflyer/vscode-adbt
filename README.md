@@ -11,8 +11,11 @@
 <br>
 <br>
 
+## 🪄 Features
+
 Currently it provides the following features:
 
+- high-performance due to small footprint,
 - language support and encoding for `*.adbt` files,
 - syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details),
 - auto-complete (Intellisense):
