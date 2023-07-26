@@ -7,7 +7,7 @@
 Currently it provides the following features:
 
 - language support and encoding for `*.adbt` files,
-- syntax highlighting (see the [official specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details),
+- syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details),
 - auto-complete (Intellisense):
   - functions/statements,
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
@@ -45,7 +45,7 @@ npm i "@igor.dvlpr/aria"
 
 <br>
 
-> 💡 More information about the Aria compiler CLI is available on its [official documentation](https://github.com/igorskyflyer/npm-adblock-aria-compiler).
+> 💡 More information about the Aria compiler CLI is available on its [official API](https://github.com/igorskyflyer/npm-adblock-aria-compiler).
 
 <br>
 <br>
