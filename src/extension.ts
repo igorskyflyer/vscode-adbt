@@ -29,7 +29,7 @@ function provideCompletionItems() {
   )
 
   itemExport.detail = 'Export all rules to a filter file.'
-  itemExport.insertText = "export ''"
+  itemExport.insertText = new vscode.SnippetString("export '${1:<file_path>}'")
 
   itemNl.detail = 'Insert a blank newline.'
 
