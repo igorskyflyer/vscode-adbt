@@ -1,7 +1,7 @@
 import * as vscode from 'vscode'
 import { getAriaFunctions } from './features/auto-complete/functions'
 import { tokenType } from './features/auto-complete/tokenType'
-import { getCommentModifiers } from './features/auto-complete/comments'
+import { getCommentModifiers } from './features/auto-complete/comment-modifiers'
 
 function provideCompletionItems(
   document: vscode.TextDocument,
