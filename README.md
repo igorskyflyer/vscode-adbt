@@ -18,6 +18,11 @@ Currently it provides the following features:
 
 <br>
 
+**_🎉 Many more features coming soon!_**
+
+<br>
+<br>
+
 > 💡 For more information about the `*.adbt` and `*.adbt.meta` files, head to the official [ADBT file format](https://github.com/igorskyflyer/file-formats/tree/main/adbt) repository.
 
 <br>
