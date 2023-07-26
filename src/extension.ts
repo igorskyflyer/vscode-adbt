@@ -31,7 +31,7 @@ function provideCompletionItems() {
   itemExport.detail = 'export path: string'
   itemExport.insertText = new vscode.SnippetString("export '${1:<file_path>}'")
   itemExport.documentation =
-    "Export all rules to the provided filepath. If the path argument doesn't exist or is invalid, Aria will abort compilation."
+    "Exports all rules to the provided filepath. If the path argument doesn't exist or is invalid, Aria will abort compilation."
 
   const itemNl: vscode.CompletionItem = new vscode.CompletionItem(
     'nl',
