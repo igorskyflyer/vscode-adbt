@@ -13,6 +13,9 @@
 	"activationEvents": [
 		"onLanguage:adbt"
 	],
+	"extensionKind": [
+		"workspace"
+	],
 	"files": [
 		"dist",
 		"meta",
