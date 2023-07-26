@@ -21,7 +21,7 @@ Currently it provides the following features:
 - language support and encoding for `*.adbt` files,
 - syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) for details),
 - auto-complete (Intellisense):
-  - functions/statements,
+  - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
 - hover information,
 - meta files `*.adbt.meta` support, relies on built-in JSON support:
