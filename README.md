@@ -60,7 +60,7 @@ npm i "@igor.dvlpr/aria"
 <br>
 <br>
 
-## 🔫 In Action
+## 🔫 In action
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/assets/screenshots/intellisense.png" alt="ADBT - auto-complete, Intellisense">
