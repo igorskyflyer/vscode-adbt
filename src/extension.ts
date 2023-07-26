@@ -19,8 +19,14 @@ function provideCompletionItems() {
   )
 
   itemInclude.detail = 'Include a filter file.'
+  itemInclude.insertText = "include ''"
+
   itemHeader.detail = 'Include a header file.'
+  itemHeader.insertText = "header ''"
+
   itemExport.detail = 'Export all rules to a filter file.'
+  itemExport.insertText = "export ''"
+
   itemNl.detail = 'Insert a blank newline.'
 
   return [itemInclude, itemExport, itemNl]
