@@ -9,5 +9,13 @@ export function getComments(): vscode.CompletionItem[] {
   itemInternal.documentation = 'Inserts an internal comment.'
   itemInternal.insertText = '@ '
 
-  return [itemInternal]
+  const itemExported: vscode.CompletionItem = new vscode.CompletionItem(
+    '#',
+    vscode.CompletionItemKind.Snippet
+  )
+  itemExported.detail = '#'
+  itemExported.documentation = 'Inserts an exported comment.'
+  itemExported.insertText = '# '
+
+  return [itemInternal, itemExported]
 }
