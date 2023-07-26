@@ -17,13 +17,13 @@ Currently it provides the following features:
 
 - high-performance due to small footprint,
 - language support and encoding for `*.adbt` files,
-- syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details),
+- syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) for details),
 - auto-complete (Intellisense):
   - functions/statements,
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
 - hover information,
 - meta files `*.adbt.meta` support, relies on built-in JSON support:
-  - autocomplete (Intellisense), see the [official specification](https://github.com/igorskyflyer/file-formats/tree/main/adbt) for details,
+  - autocomplete (Intellisense), see the [official specification](hhttps://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) for details,
   - hover info.
 
 <br>
@@ -33,13 +33,13 @@ Currently it provides the following features:
 <br>
 <br>
 
-> 💡 For more information about the `*.adbt` and `*.adbt.meta` files, head to the official [ADBT file format](https://github.com/igorskyflyer/file-formats/tree/main/adbt) repository.
+> 💡 For more information about the `*.adbt` and `*.adbt.meta` files, head to the official [ADBT file format](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) repository.
 
 <br>
 
 ## 📦 Prerequisites
 
-As mentioned above, this extension provides ADBT support in Visual Studio Code but to actually compile ADBT files, you need to obtain and install the latest version of [Aria compiler](https://github.com/igorskyflyer/npm-adblock-aria-compiler) (CLI) via npm:
+As mentioned above, this extension provides ADBT support in Visual Studio Code but to actually compile ADBT files, you need to obtain and install the latest version of [Aria compiler](https://www.npmjs.com/package/@igor.dvlpr/aria) (CLI) via npm:
 
 Globally,
 
@@ -55,7 +55,7 @@ npm i "@igor.dvlpr/aria"
 
 <br>
 
-> 💡 More information about the Aria compiler CLI is available on its [official API](https://github.com/igorskyflyer/npm-adblock-aria-compiler).
+> 💡 More information about the Aria compiler CLI is available on its [official API](https://github.com/igorskyflyer/npm-adblock-aria-compiler/tree/main#readme).
 
 <br>
 <br>
