@@ -1,8 +1,8 @@
 import * as vscode from 'vscode'
-import { getAriaFunctions } from './features/auto-complete/functions'
-import { tokenType } from './features/auto-complete/tokenType'
 import { getCommentModifiers } from './features/auto-complete/comment-modifiers'
 import { getComments } from './features/auto-complete/comments'
+import { getAriaFunctions } from './features/auto-complete/functions'
+import { tokenType } from './features/auto-complete/tokenType'
 import { HoverInfoText } from './features/hover-info/HoverInfoText'
 import { HoverToken } from './features/hover-info/HoverToken'
 
@@ -38,7 +38,7 @@ function provideHover(
   }
 
   const word: string = document.getText(wordRange)
-  let hoverText: string = 'No hover information available.'
+  let hoverText: string = ''
 
   if (word in HoverInfoText) {
     hoverText = HoverInfoText[word as HoverToken]
