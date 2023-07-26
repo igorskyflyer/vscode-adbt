@@ -5,6 +5,10 @@ function provideCompletionItems() {
     'include',
     vscode.CompletionItemKind.Function
   )
+  const itemHeader: vscode.CompletionItem = new vscode.CompletionItem(
+    'header',
+    vscode.CompletionItemKind.Function
+  )
   const itemExport: vscode.CompletionItem = new vscode.CompletionItem(
     'export',
     vscode.CompletionItemKind.Function
@@ -15,6 +19,7 @@ function provideCompletionItems() {
   )
 
   itemInclude.detail = 'Includes a filter file.'
+  itemHeader.detail = 'Includes a header file.'
   itemExport.detail = 'Exports all rules to a filter file.'
   itemNl.detail = 'Insert a blank newline.'
 
