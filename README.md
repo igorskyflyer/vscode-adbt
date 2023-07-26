@@ -29,7 +29,7 @@ Currently it provides the following features:
 
 ## 📦 Prerequisites
 
-As mentioned above, this extension provides ADBT support in Visual Studio Code but to actually compile ADBT files, you need to obtain and install the latest version of [Aria compiler](https://github.com/igorskyflyer/npm-adblock-aria-compiler) via npm:
+As mentioned above, this extension provides ADBT support in Visual Studio Code but to actually compile ADBT files, you need to obtain and install the latest version of [Aria compiler](https://github.com/igorskyflyer/npm-adblock-aria-compiler) (CLI) via npm:
 
 Globally,
 
@@ -43,6 +43,11 @@ or locally,
 npm i "@igor.dvlpr/aria"
 ```
 
+<br>
+
+> 💡 More information about the Aria compiler CLI is available on its [official documentation](https://github.com/igorskyflyer/npm-adblock-aria-compiler).
+
+<br>
 <br>
 
 ## 🔫 In Action
