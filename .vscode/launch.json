@@ -11,7 +11,7 @@
 			"request": "launch",
 			// "preLaunchTask": "build",
 			"outFiles": [
-				"${workspaceFolder}/out/**/*.js"
+				"${workspaceFolder}/dist/**/*.js"
 			],
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
