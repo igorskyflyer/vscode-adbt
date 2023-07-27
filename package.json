@@ -3,7 +3,7 @@
 	"displayName": "Adblock template support (ADBT)",
 	"publisher": "igordvlpr",
 	"description": "📜 Provides ADBT (Adblock template) support in Visual Studio Code. 🪅",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"engines": {
 		"vscode": "^1.80.0"
 	},
