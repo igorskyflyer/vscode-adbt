@@ -25,10 +25,10 @@
 		"meta",
 		"snippets",
 		"syntaxes",
-		"assets/aria.png"
+		"icons/adbt.png"
 	],
 	"main": "./dist/extension.js",
-	"icon": "assets/aria.png",
+	"icon": "icons/adbt.png",
 	"galleryBanner": {
 		"color": "#6a6976",
 		"theme": "dark"
