@@ -29,7 +29,8 @@ Currently it provides the following features:
 - snippets,
 - meta files `*.adbt.meta` support, relies on built-in JSON support:
   - autocomplete (Intellisense), see the [official specification](hhttps://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) for details,
-  - hover info.
+  - hover info,
+- custom file icon.
 
 <br>
 
