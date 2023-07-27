@@ -59,7 +59,11 @@
 				],
 				"extensions": [
 					".adbt"
-				]
+				],
+				"icon": {
+					"light": "./icons/adbt-file-icon.svg",
+					"dark": "./icons/adbt-file-icon.svg"
+				}
 			}
 		],
 		"grammars": [
