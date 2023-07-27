@@ -4,6 +4,13 @@
 
 <br>
 
+## 1.0.2 - 27-Jul-2023
+
+- add file type icon
+
+<br>
+<br>
+
 ## 1.0.1 - 27-Jul-2023
 
 - fix galleryBanner on Marketplace
@@ -11,6 +18,6 @@
 <br>
 <br>
 
-## 1.0.0 - 26-Jul-2023
+## 1.0.0 - 27-Jul-2023
 
 - initial release 🎉
