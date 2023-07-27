@@ -30,7 +30,7 @@
 	"main": "./dist/extension.js",
 	"icon": "icons/adbt.png",
 	"galleryBanner": {
-		"color": "#6a6976",
+		"color": "#28282d",
 		"theme": "dark"
 	},
 	"keywords": [
