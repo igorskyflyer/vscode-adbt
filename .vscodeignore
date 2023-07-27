@@ -1,7 +1,7 @@
 .vscode/**
 .vscode-test/**
 .github/**
-assets/screenshots/**
+assets/**
 src/**
 out/**
 .gitignore
