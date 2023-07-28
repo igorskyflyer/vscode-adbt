@@ -4,6 +4,15 @@
 
 <br>
 
+## 1.0.3 - 28-Jul-2023
+
+- improve `*.adbm` meta files Intellisense,
+- add JSON association for `*.adbm` files,
+- fix README links
+
+<br>
+<br>
+
 ## 1.0.2 - 27-Jul-2023
 
 - add file type icon
