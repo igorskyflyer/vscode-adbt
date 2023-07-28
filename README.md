@@ -34,7 +34,7 @@ Currently it provides the following features:
 
 <br>
 
-**_🎉 Many more features coming soon!_**
+<div align="center"><em><strong>🎉 Many more features coming soon!</strong></em></div>
 
 <br>
 <br>
