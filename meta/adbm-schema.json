@@ -4,15 +4,15 @@
 	"properties": {
 		"title": {
 			"type": "string",
-			"description": "The title use in the resulting filter rules file."
+			"description": "The title to use in the resulting filter list file.\n\nTo use it include {title} variable inside your header's metadata."
 		},
 		"description": {
 			"type": "string",
-			"description": "The description to use in the resulting filter rules file."
+			"description": "The description to use in the resulting filter list file.\n\nTo use it include {description} or {about} variables inside your header's metadata."
 		},
 		"versioning": {
 			"type": "string",
-			"description": "The versioning system to use in the resulting filter rules file.\n\n\"auto\" - inherit from the previous version of the file or let Aria decide,\n\"semver\" - use SemVer versioning,\n\"timestamp\" - use current Unix timestamp",
+			"description": "The versioning system to use in the resulting filter list file.\n\n\"auto\" - inherit from the previous version of the file or let Aria decide,\n\"semver\" - use SemVer versioning,\n\"timestamp\" - use current Unix timestamp",
 			"enum": [
 				"auto",
 				"semver",
