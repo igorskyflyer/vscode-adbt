@@ -15,7 +15,7 @@
 	"activationEvents": [
 		"onLanguage:adbt",
 		"workspaceContains:**/*.adbt",
-		"workspaceContains:**/*.adbt.meta"
+		"workspaceContains:**/*.adbm"
 	],
 	"extensionKind": [
 		"workspace"
@@ -76,7 +76,7 @@
 		"jsonValidation": [
 			{
 				"fileMatch": [
-					"*.adbt.meta"
+					"*.adbm"
 				],
 				"url": "./meta/adbt-meta-schema.json"
 			}
