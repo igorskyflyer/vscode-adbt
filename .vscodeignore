@@ -6,3 +6,5 @@ src/**
 out/**
 .gitignore
 tsconfig.json
+*.vsix
+*.zip
