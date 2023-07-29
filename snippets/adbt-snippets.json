@@ -1,6 +1,7 @@
 {
 	"Adblock template": {
 		"prefix": "adbt",
+		"description": "Boilerplate for an Adblock template.",
 		"body": [
 			"@ Filter",
 			"",
@@ -11,7 +12,13 @@
 			"include '${2:filter_path}'",
 			"",
 			"export '${3:file_path}'"
-		],
-		"description": "Boilerplate for an Adblock template."
+		]
+	},
+	"Adblock directive": {
+		"prefix": "adb",
+		"description": "Adblock header directive.",
+		"body": [
+			"[Adblock Plus ${1:2.0}]"
+		]
 	}
 }
