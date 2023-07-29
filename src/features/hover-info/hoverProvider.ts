@@ -8,13 +8,13 @@ export function provideHover(
 ): vscode.Hover | undefined {
   const wordRange: vscode.Range | undefined =
     document.getWordRangeAtPosition(position)
+  let hoverText: string = 'No information available.'
 
   if (!wordRange) {
-    return
+    return new vscode.Hover(hoverText)
   }
 
   const word: string = document.getText(wordRange)
-  let hoverText: string = ''
 
   if (word in HoverInfoText) {
     hoverText = HoverInfoText[word as HoverToken]
