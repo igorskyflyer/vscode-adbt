@@ -18,7 +18,8 @@
 		"prefix": "adb",
 		"description": "Adblock header directive.",
 		"body": [
-			"[Adblock Plus ${1:2.0}]"
+			"[Adblock Plus ${1:2.0}]",
+			""
 		]
 	}
 }
