@@ -9,10 +9,32 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#directives"
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.adbt",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"match": "\\\\(?:\\\\|')",
+							"name": "constant.character.escape.adbt"
+						},
+						{
+							"match": "[^\\\\']+",
+							"name": "string.quoted.single.adbt"
+						}
+					]
+				}
+			]
+		},
 		"comments": {
 			"patterns": [
 				{
@@ -37,50 +59,11 @@
 				}
 			]
 		},
-		"directives": {
+		"keywords": {
 			"patterns": [
 				{
-					"name": "directive.include.adbt",
-					"begin": "include\\s+",
-					"end": "('.*')$",
-					"captures": {
-						"0": {
-							"name": "storage.type.function.adbt"
-						},
-						"1": {
-							"name": "string.quoted.single.adbt"
-						}
-					}
-				},
-				{
-					"name": "directive.header.adbt",
-					"begin": "header\\s+",
-					"end": "('.*')$",
-					"captures": {
-						"0": {
-							"name": "storage.type.function.adbt"
-						},
-						"1": {
-							"name": "string.quoted.single.adbt"
-						}
-					}
-				},
-				{
-					"name": "directive.export.adbt",
-					"begin": "export\\s+",
-					"end": "('.*')$",
-					"captures": {
-						"0": {
-							"name": "storage.type.function.adbt"
-						},
-						"1": {
-							"name": "string.quoted.single.adbt"
-						}
-					}
-				},
-				{
-					"name": "directive.newline.adbt",
-					"match": "^\\s*nl\\s*$",
+					"name": "keyword.statement.adbt",
+					"match": "\\b(header|include|export|nl)\\b",
 					"captures": {
 						"0": {
 							"name": "storage.type.function.adbt"
