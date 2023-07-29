@@ -3,3 +3,5 @@ node_modules
 dist/**
 out/**
 assets/**.afdesign
+*.vsix
+*.zip
