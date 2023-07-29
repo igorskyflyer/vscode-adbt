@@ -2,7 +2,9 @@
 
 Adblock template support for Visual Studio Code
 <br>
-<sub>for <a href="https://github.com/igorskyflyer/npm-adblock-aria-compiler">Aria compiler</a></sub>
+<sub>via <a href="https://github.com/igorskyflyer/npm-adblock-aria-compiler">Aria compiler</a></sub>
+<br>
+<sub>for <a href="https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md">ADBT files</a></sub>
 
 <br>
 
