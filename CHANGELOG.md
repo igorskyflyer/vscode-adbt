@@ -4,6 +4,13 @@
 
 <br>
 
+## 1.0.4 - 30-Jul-2023
+
+- rework syntax highlighting,
+- fix hover provider bug
+
+<br>
+
 ## 1.0.3 - 28-Jul-2023
 
 - improve `*.adbm` meta files Intellisense,
