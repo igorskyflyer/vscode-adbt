@@ -3,6 +3,7 @@ import { getCommentModifiers } from './commentModifiers'
 import { getComments } from './comments'
 import { getAriaFunctions } from './functions'
 import { tokenType } from './tokenType'
+import { getDirectives } from './directives'
 
 export function provideCompletionItems(
   document: vscode.TextDocument,
@@ -12,7 +13,9 @@ export function provideCompletionItems(
   const lineText: string = document.lineAt(position.line).text
   const textBeforeCursor: string = lineText.substring(0, position.character)
 
-  if (
+  if (textBeforeCursor.startsWith('[')) {
+    items.push(...getDirectives())
+  } else if (
     textBeforeCursor.startsWith(tokenType.internalComment) ||
     textBeforeCursor.startsWith(tokenType.exportedComment)
   ) {
