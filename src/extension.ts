@@ -9,9 +9,7 @@ function activate(context: vscode.ExtensionContext) {
       {
         provideCompletionItems,
       },
-      '[',
-      '@',
-      '#'
+      '['
     ),
     vscode.languages.registerHoverProvider('adbt', {
       provideHover,
