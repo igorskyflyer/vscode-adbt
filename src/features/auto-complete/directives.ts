@@ -5,9 +5,11 @@ export function getDirectives(): vscode.CompletionItem[] {
     '[Adblock Plus]',
     vscode.CompletionItemKind.Snippet
   )
-  itemAdblockDirective.detail = '@'
+  itemAdblockDirective.detail = '[Adblock Plus]'
   itemAdblockDirective.documentation = 'Inserts a header directive.'
-  itemAdblockDirective.insertText = '[Adblock Plus ${1:"2.0"}]'
+  itemAdblockDirective.insertText = new vscode.SnippetString(
+    'Adblock Plus ${1:2.0}]'
+  )
 
   return [itemAdblockDirective]
 }
