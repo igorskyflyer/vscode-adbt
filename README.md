@@ -27,6 +27,7 @@ Currently it provides the following features:
 - auto-complete (Intellisense):
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
+  - directives,
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
