@@ -85,3 +85,35 @@ npm i "@igor.dvlpr/aria"
 	<br>
 	<sub>Visual Studio Code theme: <a href="https://github.com/igorskyflyer/vscode-theme-kai"><code>Kai</code></a></sub>
 </p>
+
+## 🪪 License
+
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/file-formats/blob/main/adbt/LICENSE).
+
+---
+
+## 🧬 Related
+
+[Open in Browser](https://marketplace.visualstudio.com/items?itemName=igordvlpr.open-in-browser)
+
+> _Opens HTML files in a browser of user's choice._
+
+[Pack VSIX](https://marketplace.visualstudio.com/items?itemName=igordvlpr.pack-vsix)
+
+> _Build your extensions right from the editor itself._
+
+[New Folder](https://marketplace.visualstudio.com/items?itemName=igordvlpr.new-folder)
+
+> _📂 Provides a "New Folder" view in the Explorer and a command in the Command Palette. 🤟_
+
+[Project Version](https://marketplace.visualstudio.com/items?itemName=igordvlpr.project-version)
+
+> _📊 Provides a visual representation of you current npm project's version. 💪_
+
+[Kai](https://marketplace.visualstudio.com/items?itemName=igordvlpr.kai-theme)
+
+> _🌊 Aloha! Kai: Where Code Meets the Sea. Immerse yourself in the tranquil depths of coding with this refreshing VS Code theme inspired by the beauty of the Hawaiian sea. 🦞_
+
+[AdVoid](https://github.com/igorskyflyer/ad-void)
+
+> _✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾_
