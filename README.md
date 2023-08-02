@@ -4,7 +4,7 @@ Adblock template support for Visual Studio Code
 <br>
 <sub>via <a href="https://github.com/igorskyflyer/npm-adblock-aria-compiler">Aria compiler</a></sub>
 <br>
-<sub>for <a href="https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md">ADBT files</a></sub>
+<sub>for <a href="https://github.com/igorskyflyer/file-format-adbt">ADBT files</a></sub>
 
 <br>
 
@@ -23,14 +23,14 @@ Currently it provides the following features:
 
 - high-performance due to small footprint,
 - language support and encoding for `*.adbt` files,
-- syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md#-syntax) for details),
+- syntax highlighting (see the [official API specification](https://github.com/igorskyflyer/file-format-adbt/releases/latest) for details),
 - auto-complete (Intellisense):
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
-  - autocomplete (Intellisense), see the [official specification](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md#-meta-files) for details,
+  - autocomplete (Intellisense), see the [official specification](https://github.com/igorskyflyer/file-format-adbt/releases/latest) for details,
   - hover info,
 - custom file icon.
 
@@ -41,7 +41,7 @@ Currently it provides the following features:
 <br>
 <br>
 
-> 💡 For more information about the `*.adbt` and `*.adbm` files, head to the official [ADBT file format](https://github.com/igorskyflyer/file-formats/blob/main/adbt/README.md) repository.
+> 💡 For more information about the `*.adbt` and `*.adbm` files, head to the official [ADBT file format](https://github.com/igorskyflyer/file-format-adbt/) repository.
 
 <br>
 
