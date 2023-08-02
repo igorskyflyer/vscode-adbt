@@ -4,6 +4,14 @@
 
 <br>
 
+## 1.0.5 - 03-Aug-2023
+
+- add directives support
+- add more snippets
+- enable trigger characters
+
+<br>
+
 ## 1.0.4 - 30-Jul-2023
 
 - rework syntax highlighting,
