@@ -4,9 +4,14 @@ import { provideHover } from './features/hover-info/hoverProvider'
 
 function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.languages.registerCompletionItemProvider('adbt', {
-      provideCompletionItems,
-    }),
+    vscode.languages.registerCompletionItemProvider(
+      'adbt',
+      {
+        provideCompletionItems,
+      },
+      '[',
+      '@'
+    ),
     vscode.languages.registerHoverProvider('adbt', {
       provideHover,
     })
