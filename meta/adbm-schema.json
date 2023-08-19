@@ -10,6 +10,10 @@
 			"type": "string",
 			"description": "The description to use in the resulting filter list file.\n\nTo use it include {description} or {about} variables inside your header's metadata."
 		},
+		"expires": {
+			"type": "string",
+			"description": "The expires field to use in the resulting filter list file.\n\nTo use it include the {expires} variable inside your header's metadata."
+		},
 		"versioning": {
 			"type": "string",
 			"description": "The versioning system to use in the resulting filter list file.\n\n\"auto\" - inherit from the previous version of the file or let Aria decide,\n\"semver\" - use SemVer versioning,\n\"timestamp\" - use current Unix timestamp",
