@@ -4,15 +4,15 @@
 	"properties": {
 		"title": {
 			"type": "string",
-			"description": "The title to use in the resulting filter list file.\n\nTo use it include {title} variable inside your header's metadata."
+			"description": "The title to use in the resulting filter list file.\n\n Human readable title of the Adblock filter list.\n\n\nTo use it include {title} variable inside your header's metadata."
 		},
 		"description": {
 			"type": "string",
-			"description": "The description to use in the resulting filter list file.\n\nTo use it include {description} or {about} variables inside your header's metadata."
+			"description": "The description to use in the resulting filter list file.\n\nProvides a brief explanation of the filter's purpose or content.\n\n\nTo use it include {description} or {about} variables inside your header's metadata."
 		},
 		"expires": {
 			"type": "string",
-			"description": "The expires field to use in the resulting filter list file.\n\nTo use it include the {expires} variable inside your header's metadata."
+			"description": "The expires field to use in the resulting filter list file.\n\nIndicates the date when the filter is scheduled to expire or be updated, ensuring it remains effective.\n\n\nTo use it include the {expires} variable inside your header's metadata."
 		},
 		"versioning": {
 			"type": "string",
