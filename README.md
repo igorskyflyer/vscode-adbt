@@ -9,6 +9,14 @@ Adblock template support for Visual Studio Code
 <br>
 
 <div align="center">
+	<img src="https://raw.githubusercontent.com/igorskyflyer/vscode-adbt/main/icons/adbt.png" alt="Aria/ADBT logo">
+	<br>
+📜 Provides ADBT (Adblock template) support in Visual Studio Code 🪅
+</div>
+
+<br>
+
+<div align="center">
 	<blockquote>
 		<h4>💖 Support further development</h4>
 		<span>I work hard for every project, including this one and your support means a lot to me!
