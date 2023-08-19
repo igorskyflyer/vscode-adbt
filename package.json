@@ -95,8 +95,7 @@
 		"base": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --platform=node --external:vscode --target=node16",
 		"vscode:prepublish": "npm run make",
 		"make": "npm run -S base -- --minify",
-		"debug": "npm run -S base -- --sourcemap",
-		"dev": "npm run -S debug -- --watch",
+		"dev": "tsc",
 		"pkg": "vsce package",
 		"pub": "vsce publish"
 	},
