@@ -12,5 +12,5 @@ export const HoverInfoText: Record<HoverToken, string> = {
   '#': 'Inserts an exported comment. After insertion, trigger auto-complete again to show comment modifiers, i.e. TODO, FIXME, NOTE.',
   import:
     "Includes a filter file and prepends its file path as a comment. If the path argument doesn't exist or is invalid, Aria will abort compilation.",
-  tag: 'Includes a tag - special, auto-enumerated comment with an optional description. Useful for code navigation, searching, etc.',
+  tag: 'Includes a tag, special, auto-enumerated comment with an optional description. Useful for code navigation, searching, etc.',
 }
