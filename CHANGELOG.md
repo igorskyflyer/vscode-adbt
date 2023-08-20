@@ -4,9 +4,19 @@
 
 <br>
 
+## 1.2.0 - 20-Aug-2023
+
+- **🪅 feat**: implement [`ADBT`](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0) to **`v1.2.0`** which brings:
+  - **🪅 feat**: implement the **[`import`](https://github.com/igorskyflyer/file-format-adbt/blob/v1.2.0/README.md#import)** statement
+    > **`import`** statements behave exactly the same as **`include`** but prepend the file path of the included filter (as a comment)
+- **🪅 feat**: implement the **[`tag`](https://github.com/igorskyflyer/file-format-adbt/blob/v1.2.0/README.md#tag)** statement
+  > Introduce a tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.
+
+<br>
+
 ## 1.1.0 - 19-Aug-2023
 
-- **🪅 feat**: upgrade [`ADBT`](https://github.com/igorskyflyer/file-format-adbt) to **`v1.1.0`** which brings:
+- **🪅 feat**: implement [`ADBT`](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0) to **`v1.1.0`** which brings:
   - support for Expires field in meta files
 
 <br>
