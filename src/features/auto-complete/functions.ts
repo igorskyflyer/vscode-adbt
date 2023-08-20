@@ -45,11 +45,11 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
     'import',
     vscode.CompletionItemKind.Function
   )
-  itemInclude.detail = 'import filter_path: string'
-  itemInclude.insertText = new vscode.SnippetString(
+  itemImport.detail = 'import filter_path: string'
+  itemImport.insertText = new vscode.SnippetString(
     "import '${1:<filter_path>}'"
   )
-  itemInclude.documentation =
+  itemImport.documentation =
     "Includes a filter file and prepends its file path as a comment. If the path argument doesn't exist or is invalid, Aria will abort compilation."
 
   const itemTag: vscode.CompletionItem = new vscode.CompletionItem(
