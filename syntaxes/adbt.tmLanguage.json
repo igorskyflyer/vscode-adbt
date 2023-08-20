@@ -63,7 +63,7 @@
 			"patterns": [
 				{
 					"name": "keyword.statement.adbt",
-					"match": "\\b(header|include|export|nl|import)\\b",
+					"match": "\\b(header|include|export|nl|import|tag)\\b",
 					"captures": {
 						"0": {
 							"name": "storage.type.function.adbt"
