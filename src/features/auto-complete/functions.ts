@@ -52,5 +52,14 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
   itemInclude.documentation =
     "Includes a filter file and prepends its file path as a comment. If the path argument doesn't exist or is invalid, Aria will abort compilation."
 
-  return [itemInclude, itemHeader, itemExport, itemNl, itemImport]
+  const itemTag: vscode.CompletionItem = new vscode.CompletionItem(
+    'tag',
+    vscode.CompletionItemKind.Function
+  )
+  itemInclude.detail = 'tag description: string'
+  itemInclude.insertText = new vscode.SnippetString("tag '${1:<description>}'")
+  itemInclude.documentation =
+    'Includes a tag - special, auto-enumerated comment with an optional description. Useful for code navigation, searching, etc.'
+
+  return [itemInclude, itemHeader, itemExport, itemNl, itemImport, itemTag]
 }
