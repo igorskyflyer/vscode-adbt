@@ -19,7 +19,7 @@
 
 #### [ADBT v1.1.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0)
 
-- support for Expires field in meta files
+- **🪅 feat**: support for Expires field in meta files
 
 <br>
 
