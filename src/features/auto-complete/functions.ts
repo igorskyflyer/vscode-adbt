@@ -41,5 +41,16 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
   itemNl.detail = 'nl (LF)'
   itemNl.documentation = 'Inserts a blank newline (LF).'
 
-  return [itemInclude, itemHeader, itemExport, itemNl]
+  const itemImport: vscode.CompletionItem = new vscode.CompletionItem(
+    'import',
+    vscode.CompletionItemKind.Function
+  )
+  itemInclude.detail = 'import filter_path: string'
+  itemInclude.insertText = new vscode.SnippetString(
+    "import '${1:<filter_path>}'"
+  )
+  itemInclude.documentation =
+    "Includes a filter file and prepends its file path as a comment. If the path argument doesn't exist or is invalid, Aria will abort compilation."
+
+  return [itemInclude, itemHeader, itemExport, itemNl, itemImport]
 }
