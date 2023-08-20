@@ -56,9 +56,9 @@ export function getAriaFunctions(): vscode.CompletionItem[] {
     'tag',
     vscode.CompletionItemKind.Function
   )
-  itemInclude.detail = 'tag description: string'
-  itemInclude.insertText = new vscode.SnippetString("tag '${1:<description>}'")
-  itemInclude.documentation =
+  itemTag.detail = 'tag description: string'
+  itemTag.insertText = new vscode.SnippetString("tag '${1:<description>}'")
+  itemTag.documentation =
     'Includes a tag - special, auto-enumerated comment with an optional description. Useful for code navigation, searching, etc.'
 
   return [itemInclude, itemHeader, itemExport, itemNl, itemImport, itemTag]
