@@ -1,1 +1,9 @@
-export type HoverToken = 'include' | 'header' | 'export' | 'nl' | '@' | '#'
+export type HoverToken =
+  | 'include'
+  | 'header'
+  | 'export'
+  | 'nl'
+  | 'import'
+  | 'tag'
+  | '@'
+  | '#'
