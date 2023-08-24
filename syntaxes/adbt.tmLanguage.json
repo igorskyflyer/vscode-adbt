@@ -9,10 +9,7 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#statements-all"
 		}
 	],
 	"repository": {
@@ -22,16 +19,16 @@
 					"name": "string.quoted.single.adbt",
 					"begin": "'",
 					"end": "'",
-					"patterns": [
-						{
-							"match": "\\\\(?:\\\\|')",
-							"name": "constant.character.escape.adbt"
-						},
-						{
-							"match": "[^\\\\']+",
-							"name": "string.quoted.single.adbt"
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.adbt"
 						}
-					]
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.adbt"
+						}
+					}
 				}
 			]
 		},
@@ -42,7 +39,7 @@
 					"begin": "#",
 					"end": "$",
 					"captures": {
-						"0": {
+						"1": {
 							"name": "punctuation.definition.comment.adbt"
 						}
 					}
@@ -52,23 +49,101 @@
 					"begin": "@",
 					"end": "$",
 					"captures": {
-						"0": {
+						"1": {
 							"name": "punctuation.definition.comment.adbt"
 						}
 					}
 				}
 			]
 		},
-		"keywords": {
+		"statements": {
 			"patterns": [
 				{
 					"name": "keyword.statement.adbt",
-					"match": "\\b(header|include|export|nl|import|tag)\\b",
+					"match": "\\b(header|export|nl|tag|import|include)\\b",
 					"captures": {
-						"0": {
-							"name": "storage.type.function.adbt"
+						"1": {
+							"name": "meta.function.adbt"
 						}
 					}
+				}
+			]
+		},
+		"statements-actions-simple": {
+			"patterns": [
+				{
+					"name": "keyword.statement.action.simple.adbt",
+					"match": "\\b(trim|dedupe)\\b",
+					"captures": {
+						"1": {
+							"name": "variable.other.property.adbt"
+						}
+					}
+				}
+			]
+		},
+		"statements-actions-parameterized": {
+			"patterns": [
+				{
+					"name": "keyword.statement.action.parameterized.strip.adbt",
+					"match": "(strip\\s*(=)?\\s*(?:(modifiers|comments)\\b)?)",
+					"captures": {
+						"1": {
+							"name": "variable.other.property.adbt"
+						},
+						"2": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"3": {
+							"name": "variable.other.constant.property.adbt"
+						}
+					}
+				},
+				{
+					"name": "keyword.statement.action.parameterized.sort.adbt",
+					"match": "(sort\\s*(=)?\\s*(?:(asc|desc)\\b)?)",
+					"captures": {
+						"1": {
+							"name": "variable.other.property.adbt"
+						},
+						"2": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"3": {
+							"name": "variable.other.constant.property.adbt"
+						}
+					}
+				},
+				{
+					"name": "keyword.statement.action.parameterized.append.adbt",
+					"match": "(append\\s*(=)?\\s*('.*?')?)",
+					"captures": {
+						"1": {
+							"name": "variable.other.property.adbt"
+						},
+						"2": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"3": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				}
+			]
+		},
+		"statements-all": {
+			"patterns": [
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#statements"
+				},
+				{
+					"include": "#statements-actions-simple"
+				},
+				{
+					"include": "#statements-actions-parameterized"
 				}
 			]
 		}
