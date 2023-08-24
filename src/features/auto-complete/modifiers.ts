@@ -1,6 +1,6 @@
 import * as vscode from 'vscode'
 
-export function getAriaFlags(): vscode.CompletionItem[] {
+export function getAriaModifiers(): vscode.CompletionItem[] {
   const itemDedupe: vscode.CompletionItem = new vscode.CompletionItem(
     'dedupe',
     vscode.CompletionItemKind.Property
