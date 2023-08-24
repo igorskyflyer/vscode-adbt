@@ -4,6 +4,24 @@
 
 <br>
 
+## v1.3.0 _(25-Aug-2023)_
+
+#### [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.3.0)
+
+- **🪅 feat**: implement Actions for **`include`** and **`import`** statements
+
+> 💡Actions allow you to invoke a certain function when including/importing filter list files.
+>
+> Supported actions:
+>
+> - trim (trims whitespace for each line from the included filter list file)
+> - dedupe (removes duplicates from the included filter list file)
+> - sort (sorts lines from the included filter list file)
+> - append (appends an arbitrary string to each line from the included filter list file)
+> - strip (strips a certain element of each line from the included filter list file)
+
+<br>
+
 ## v1.2.0 _(20-Aug-2023)_
 
 #### [ADBT v1.2.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0)
