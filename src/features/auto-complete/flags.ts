@@ -6,7 +6,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
     vscode.CompletionItemKind.Property
   )
   itemDedupe.detail = 'Dedupe flag'
-  itemDedupe.insertText = new vscode.SnippetString('dedupe')
+  itemDedupe.insertText = 'dedupe'
   itemDedupe.documentation = 'Removes duplicate entries.'
 
   const itemSort: vscode.CompletionItem = new vscode.CompletionItem(
@@ -14,7 +14,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
     vscode.CompletionItemKind.Property
   )
   itemSort.detail = 'Sort flag'
-  itemSort.insertText = new vscode.SnippetString('sort')
+  itemSort.insertText = 'sort'
   itemSort.documentation = new vscode.MarkdownString(
     'Sort entries (**asc**/**desc**).'
   )
@@ -24,7 +24,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
     vscode.CompletionItemKind.Property
   )
   itemTrim.detail = 'Trim flag'
-  itemTrim.insertText = new vscode.SnippetString('trim')
+  itemTrim.insertText = 'trim'
   itemTrim.documentation = 'Trims whitespace for each entry.'
 
   const itemAppend: vscode.CompletionItem = new vscode.CompletionItem(
