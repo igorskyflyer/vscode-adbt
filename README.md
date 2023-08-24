@@ -47,6 +47,7 @@ Currently it provides the following features:
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
   - directives,
+  - actions
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
