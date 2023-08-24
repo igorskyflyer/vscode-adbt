@@ -1,9 +1,11 @@
 import * as vscode from 'vscode'
+import { AriaActionParams, getActionParams } from './actionParams'
+import { getAriaActions } from './actions'
 import { getCommentModifiers } from './commentModifiers'
 import { getComments } from './comments'
+import { getDirectives } from './directives'
 import { getAriaFunctions } from './functions'
 import { tokenType } from './tokenType'
-import { getDirectives } from './directives'
 
 export function provideCompletionItems(
   document: vscode.TextDocument,
@@ -13,6 +15,9 @@ export function provideCompletionItems(
   const lineText: string = document.lineAt(position.line).text
   const textBeforeCursor: string = lineText.substring(0, position.character)
 
+  const expInclude = /(import|include)\s+'([^']*)'/i
+  const matchInclude = lineText.match(expInclude)
+
   if (textBeforeCursor.startsWith('[')) {
     items.push(...getDirectives())
   } else if (
@@ -20,7 +25,26 @@ export function provideCompletionItems(
     textBeforeCursor.startsWith(tokenType.exportedComment)
   ) {
     items.push(...getCommentModifiers())
-  } else {
+  } else if (matchInclude) {
+    if (textBeforeCursor.trim().endsWith('=')) {
+      const probeAction: RegExpMatchArray | null = textBeforeCursor.match(
+        /(?:import|include)\s+'(?:[^']*)'\s+(sort|strip)/i
+      )
+
+      if (probeAction && probeAction.length === 2) {
+        const action: string = probeAction[1]
+
+        if (action in AriaActionParams) {
+          items.push(...getActionParams(action))
+        }
+      }
+    } else if (
+      position.character >
+      matchInclude.index! + matchInclude[0].length
+    ) {
+      items.push(...getAriaActions())
+    }
+  } else if (textBeforeCursor.indexOf("'") === -1) {
     items.push(...getAriaFunctions(), ...getComments())
   }
 
