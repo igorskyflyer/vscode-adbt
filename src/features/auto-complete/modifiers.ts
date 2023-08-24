@@ -14,7 +14,7 @@ export function getAriaModifiers(): vscode.CompletionItem[] {
     vscode.CompletionItemKind.Property
   )
   itemSort.detail = 'Sort flag'
-  itemSort.insertText = 'sort'
+  itemSort.insertText = new vscode.SnippetString('sort = ${1|asc,desc|}')
   itemSort.documentation = new vscode.MarkdownString(
     'Sort entries, either in *ascending* or *descending* order.\n\nYou can pass an optional value:\n- **asc** - ascending order (**default**)\n- **desc** - descending order.'
   )
