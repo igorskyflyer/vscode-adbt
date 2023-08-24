@@ -7,7 +7,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   )
   itemDedupe.detail = 'Dedupe flag'
   itemDedupe.insertText = 'dedupe'
-  itemDedupe.documentation = 'Removes duplicate entries.'
+  itemDedupe.documentation = 'Remove duplicate entries.'
 
   const itemSort: vscode.CompletionItem = new vscode.CompletionItem(
     'sort',
@@ -16,7 +16,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   itemSort.detail = 'Sort flag'
   itemSort.insertText = 'sort'
   itemSort.documentation = new vscode.MarkdownString(
-    `Sort entries, either in *ascending* or *descending* order.\n\nYou can pass an optional value:\n- **asc** - ascending order (**default**)\n- **desc** - descending order.`
+    'Sort entries, either in *ascending* or *descending* order.\n\nYou can pass an optional value:\n- **asc** - ascending order (**default**)\n- **desc** - descending order.'
   )
 
   const itemTrim: vscode.CompletionItem = new vscode.CompletionItem(
@@ -25,7 +25,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   )
   itemTrim.detail = 'Trim flag'
   itemTrim.insertText = 'trim'
-  itemTrim.documentation = 'Trims whitespace for each entry.'
+  itemTrim.documentation = 'Trim whitespace for each entry.'
 
   const itemAppend: vscode.CompletionItem = new vscode.CompletionItem(
     'append',
@@ -33,7 +33,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   )
   itemAppend.detail = 'Append flag'
   itemAppend.insertText = new vscode.SnippetString("append = '${1:<value>}'")
-  itemAppend.documentation = 'Appends a string to each entry.'
+  itemAppend.documentation = 'Append a string to each entry.'
 
   const itemStrip: vscode.CompletionItem = new vscode.CompletionItem(
     'strip',
@@ -43,7 +43,9 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   itemStrip.insertText = new vscode.SnippetString(
     'strip = ${1|modifiers,comments|}'
   )
-  itemStrip.documentation = 'Strips each entry of a certain value.'
+  itemStrip.documentation = new vscode.MarkdownString(
+    'Strip each entry of a certain element.\n\nCurrently supported elements are:\n- **modifiers** - modifiers, e.g. **_$third-party_**, **_$script_**, etc.\n- **comments** - comments.'
+  )
 
   return [itemDedupe, itemSort, itemTrim, itemAppend, itemStrip]
 }
