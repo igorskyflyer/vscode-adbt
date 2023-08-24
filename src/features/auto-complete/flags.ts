@@ -16,7 +16,7 @@ export function getAriaFlags(): vscode.CompletionItem[] {
   itemSort.detail = 'Sort flag'
   itemSort.insertText = 'sort'
   itemSort.documentation = new vscode.MarkdownString(
-    'Sort entries (**asc**/**desc**).'
+    `Sort entries, either in *ascending* or *descending* order.\n\nYou can pass an optional value:\n- **asc** - ascending order (**default**)\n- **desc** - descending order.`
   )
 
   const itemTrim: vscode.CompletionItem = new vscode.CompletionItem(
