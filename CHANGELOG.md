@@ -4,7 +4,9 @@
 
 <br>
 
-## v1.3.0 _(25-Aug-2023)_
+## v1.3.0
+
+<p align="right"><em>25-Aug-2023</em></p>
 
 #### [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.3.0)
 
@@ -22,7 +24,9 @@
 
 <br>
 
-## v1.2.0 _(20-Aug-2023)_
+## v1.2.0
+
+<p align="right"><em>20-Aug-2023</em></p>
 
 #### [ADBT v1.2.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0)
 
@@ -33,7 +37,9 @@
 
 <br>
 
-## v1.1.0 _(19-Aug-2023)_
+## v1.1.0
+
+<p align="right"><em>19-Aug-2023</em></p>
 
 #### [ADBT v1.1.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0)
 
@@ -41,7 +47,9 @@
 
 <br>
 
-## v1.0.5 _(03-Aug-2023)_
+## v1.0.5
+
+<p align="right"><em>03-Aug-2023</em></p>
 
 - **🪅 feat**: add directives support
 - **🪅 feat**: add more snippets
@@ -49,14 +57,18 @@
 
 <br>
 
-## v1.0.4 _(30-Jul-2023)_
+## v1.0.4
+
+<p align="right"><em>30-Jul-2023</em></p>
 
 - **✅ fix**: rework syntax highlighting,
 - **✅ fix**: fix hover provider bug
 
 <br>
 
-## v1.0.3 _(28-Jul-2023)_
+## v1.0.3
+
+<p align="right"><em>28-Jul-2023</em></p>
 
 - **🪅 feat**: add JSON association for `*.adbm` files,
 - **✅ fix**: improve `*.adbm` meta files Intellisense,
@@ -65,20 +77,26 @@
 <br>
 <br>
 
-## v1.0.2 _(27-Jul-2023)_
+## v1.0.2
+
+<p align="right"><em>27-Jul-2023</em></p>
 
 - **🪅 feat**: add file type icon
 
 <br>
 <br>
 
-## v1.0.1 _(27-Jul-2023)_
+## v1.0.1
+
+<p align="right"><em>27-Jul-2023</em></p>
 
 - **✅ fix**: fix galleryBanner on Marketplace
 
 <br>
 <br>
 
-## v1.0.0 _(27-Jul-2023)_
+## v1.0.0
+
+<p align="right"><em>27-Jul-2023</em></p>
 
 - **🚀 launch**: initial release 🎉
