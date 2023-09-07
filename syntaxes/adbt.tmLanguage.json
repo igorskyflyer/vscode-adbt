@@ -9,48 +9,40 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#statements-all"
+			"include": "#statements"
 		}
 	],
 	"repository": {
-		"strings": {
-			"patterns": [
-				{
-					"name": "string.quoted.single.adbt",
-					"begin": "'",
-					"end": "'",
-					"beginCaptures": {
-						"0": {
-							"name": "punctuation.definition.string.begin.adbt"
-						}
-					},
-					"endCaptures": {
-						"0": {
-							"name": "punctuation.definition.string.begin.adbt"
-						}
-					}
-				}
-			]
-		},
 		"comments": {
 			"patterns": [
 				{
 					"name": "comment.exported.adbt",
-					"begin": "#",
-					"end": "$",
+					"match": "#.*",
 					"captures": {
-						"1": {
+						"0": {
 							"name": "punctuation.definition.comment.adbt"
 						}
 					}
 				},
 				{
 					"name": "comment.internal.adbt",
-					"begin": "@",
-					"end": "$",
+					"match": "@.*",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.adbt"
+						}
+					}
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.value.adbt",
+					"match": "'([^']*)'",
 					"captures": {
 						"1": {
-							"name": "punctuation.definition.comment.adbt"
+							"name": "string.quoted.single.adbt"
 						}
 					}
 				}
@@ -59,91 +51,121 @@
 		"statements": {
 			"patterns": [
 				{
-					"name": "keyword.statement.adbt",
-					"match": "\\b(header|export|nl|tag|import|include)\\b",
+					"name": "keyword.statement.meta.adbt",
+					"match": "\\b(meta)\\b(?:\\s*(title|expires|description)?\\s*(=)?\\s*('[^']*')?)?",
+					"captures": {
+						"1": {
+							"name": "meta.function.adbt"
+						},
+						"2": {
+							"name": "variable.other.property.adbt"
+						},
+						"3": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"4": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				},
+				{
+					"name": "keyword.statement.nl.adbt",
+					"match": "\\b(nl)\\b",
 					"captures": {
 						"1": {
 							"name": "meta.function.adbt"
 						}
 					}
-				}
-			]
-		},
-		"statements-actions-simple": {
-			"patterns": [
-				{
-					"name": "keyword.statement.action.simple.adbt",
-					"match": "\\b(trim|dedupe)\\b",
-					"captures": {
-						"1": {
-							"name": "variable.other.property.adbt"
-						}
-					}
-				}
-			]
-		},
-		"statements-actions-parameterized": {
-			"patterns": [
-				{
-					"name": "keyword.statement.action.parameterized.strip.adbt",
-					"match": "(strip\\s*(=)?\\s*(?:(modifiers|comments)\\b)?)",
-					"captures": {
-						"1": {
-							"name": "variable.other.property.adbt"
-						},
-						"2": {
-							"name": "keyword.operator.assignment.adbt"
-						},
-						"3": {
-							"name": "variable.other.constant.property.adbt"
-						}
-					}
 				},
 				{
-					"name": "keyword.statement.action.parameterized.sort.adbt",
-					"match": "(sort\\s*(=)?\\s*(?:(asc|desc)\\b)?)",
+					"name": "keyword.statement.actionless.adbt",
+					"match": "\\b(header|include|import|tag|export)\\b\\s+('[^']*')?\\s*$",
 					"captures": {
 						"1": {
-							"name": "variable.other.property.adbt"
+							"name": "meta.function.adbt"
 						},
 						"2": {
-							"name": "keyword.operator.assignment.adbt"
-						},
-						"3": {
-							"name": "variable.other.constant.property.adbt"
-						}
-					}
-				},
-				{
-					"name": "keyword.statement.action.parameterized.append.adbt",
-					"match": "(append\\s*(=)?\\s*('.*?')?)",
-					"captures": {
-						"1": {
-							"name": "variable.other.property.adbt"
-						},
-						"2": {
-							"name": "keyword.operator.assignment.adbt"
-						},
-						"3": {
 							"name": "string.quoted.single.adbt"
 						}
 					}
-				}
-			]
-		},
-		"statements-all": {
-			"patterns": [
-				{
-					"include": "#strings"
 				},
 				{
-					"include": "#statements"
+					"name": "keyword.statement.actions.simple.adbt",
+					"match": "\\b(include|import)?\\b\\s+('[^']*')?\\s+(trim|dedupe)?\\s*$",
+					"captures": {
+						"1": {
+							"name": "meta.function.adbt"
+						},
+						"2": {
+							"name": "string.quoted.single.adbt"
+						},
+						"3": {
+							"name": "variable.other.property.adbt"
+						}
+					}
 				},
 				{
-					"include": "#statements-actions-simple"
+					"name": "keyword.statement.actions.sort.adbt",
+					"match": "\\b(include|import)\\b\\s+('[^']*')\\s+(?:(sort)?\\s*(=)?\\s*(asc|desc)?)?\\s*$",
+					"captures": {
+						"1": {
+							"name": "meta.function.adbt"
+						},
+						"2": {
+							"name": "string.quoted.single.adbt"
+						},
+						"3": {
+							"name": "variable.other.property.adbt"
+						},
+						"4": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"5": {
+							"name": "variable.other.constant.property.adbt"
+						}
+					}
 				},
 				{
-					"include": "#statements-actions-parameterized"
+					"name": "keyword.statement.actions.append.adbt",
+					"match": "\\b(include|import)\\b\\s+('[^']*')\\s+(?:(append)?\\s*(=)?\\s*('[^']*')?)?\\s*$",
+					"captures": {
+						"1": {
+							"name": "meta.function.adbt"
+						},
+						"2": {
+							"name": "string.quoted.single.adbt"
+						},
+						"3": {
+							"name": "variable.other.property.adbt"
+						},
+						"4": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"5": {
+							"name": "string.quoted.single.adbt"
+						}
+					}
+				},
+				{
+					"name": "keyword.statement.actions.strip.adbt",
+					"match": "\\b(include|import)\\b\\s+('[^']*')\\s+(?:(strip)?\\s*(=)?\\s*(modifiers|comments)?)?\\s*$",
+					"captures": {
+						"1": {
+							"name": "meta.function.adbt"
+						},
+						"2": {
+							"name": "string.quoted.single.adbt"
+						},
+						"3": {
+							"name": "variable.other.property.adbt"
+						},
+						"4": {
+							"name": "keyword.operator.assignment.adbt"
+						},
+						"5": {
+							"name": "variable.other.constant.property.adbt"
+						}
+					}
 				}
 			]
 		}
