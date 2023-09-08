@@ -69,6 +69,8 @@
 - **🪅 feat**: add more snippets
 - **🪅 feat**: enable trigger characters
 
+> 🦄 See also [ADBT v1.0.1](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.1) for internal ADBT changes.
+
 <br>
 
 ## v1.0.4
