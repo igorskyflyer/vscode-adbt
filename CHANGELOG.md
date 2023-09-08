@@ -92,7 +92,8 @@
 - **✅ fix**: improve `*.adbm` meta files Intellisense,
 - **✅ fix**: fix README links
 
-<br>
+> 🦄 See also [ADBT v1.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.0) for internal ADBT changes.
+
 <br>
 
 ## v1.0.2
