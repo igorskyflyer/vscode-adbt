@@ -9,7 +9,7 @@ export function provideHover(
     document.getWordRangeAtPosition(position)
 
   if (!wordRange) {
-    return new vscode.Hover('No information available.')
+    return new vscode.Hover('No information available')
   }
 
   const stringRange: vscode.Range | undefined = document.getWordRangeAtPosition(
@@ -18,7 +18,7 @@ export function provideHover(
   )
 
   if (stringRange) {
-    return new vscode.Hover('A UTF-8 encoded string.')
+    return new vscode.Hover('A UTF-8 encoded string')
   }
 
   const word: string = document.getText(wordRange)
@@ -38,5 +38,5 @@ export function provideHover(
     return findToken(word, word)
   }
 
-  return new vscode.Hover('No information available.')
+  return new vscode.Hover('No information available')
 }
