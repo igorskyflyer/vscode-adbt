@@ -13,8 +13,4 @@ export class HoverInfoEntry implements IHoverInfoEntry {
     this.info = info
     this.subtokens = subtokens || []
   }
-
-  find(token: string): string {
-    return token
-  }
 }
