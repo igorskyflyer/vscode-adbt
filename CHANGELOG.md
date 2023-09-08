@@ -9,7 +9,7 @@
 <p align="right"><em>09-Sep-2023</em></p>
 
 - **🪅 feat**: add support for the new [meta](https://github.com/metaigorskyflyer/file-format-adbt#meta) statement
-- **🪅 feat**: add support ADBT version directive
+- **🪅 feat**: add support for inserting the current ADBT version
 - **🪅 feat**: add support for compound statements
 - **🪅 feat**: add hover info for all keywords/types
 - **✅ fix**: fix auto-complete for statements
