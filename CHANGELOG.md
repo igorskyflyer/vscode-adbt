@@ -34,7 +34,7 @@ See also [ADBT v2.0.0](https://github.com/igorskyflyer/file-format-adbt/releases
 > - append (appends an arbitrary string to each line from the included filter list file)
 > - strip (strips a certain element of each line from the included filter list file)
 
-See also [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.3.0) for internal Aria changes.
+> 🦄 See also [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.3.0) for internal ADBT changes.
 
 <br>
 
