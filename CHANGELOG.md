@@ -42,12 +42,12 @@ See also [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases
 
 <p align="right"><em>20-Aug-2023</em></p>
 
-#### [ADBT v1.2.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0)
-
 - **🪅 feat**: implement the **[`import`](https://github.com/igorskyflyer/file-format-adbt/blob/v1.2.0/README.md#import)** statement
   > **`import`** statements behave exactly the same as **`include`** but prepend the file path of the included filter (as a comment)
 - **🪅 feat**: implement the **[`tag`](https://github.com/igorskyflyer/file-format-adbt/blob/v1.2.0/README.md#tag)** statement
   > Introduce a tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.
+
+> 🦄 See also [ADBT v1.2.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0) for internal ADBT changes.
 
 <br>
 
