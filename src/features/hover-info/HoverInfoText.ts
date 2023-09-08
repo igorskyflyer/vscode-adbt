@@ -58,8 +58,8 @@ const HoverInfoText: HoverInfoEntry[] = [
   new HoverInfoEntry('header', 'Includes a header file.'),
   new HoverInfoEntry('export', 'Exports all rules to the provided filepath.'),
   new HoverInfoEntry('nl', 'Inserts a blank newline (LF).'),
-  new HoverInfoEntry('@', 'Inserts an internal comment.'),
-  new HoverInfoEntry('#', 'Inserts an exported comment.'),
+  new HoverInfoEntry('@', 'Internal comment.'),
+  new HoverInfoEntry('#', 'Exported comment.'),
   new HoverInfoEntry(
     'import',
     'Includes a filter file and prepends its file path as a comment.'
