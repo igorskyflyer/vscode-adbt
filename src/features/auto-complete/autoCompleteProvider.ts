@@ -5,8 +5,8 @@ import { getCommentModifiers } from './commentModifiers'
 import { getComments } from './comments'
 import { getDirectives } from './directives'
 import { getAriaFunctions } from './functions'
-import { tokenType } from './tokenType'
 import { getAriaMetaProps } from './metaProps'
+import { tokenType } from './tokenType'
 
 // cache these
 const expInclude = /(import|include)\s+'([^']*)'/i
