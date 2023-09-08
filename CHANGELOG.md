@@ -14,7 +14,7 @@
 - **🪅 feat**: add hover info for all keywords/types
 - **✅ fix**: fix auto-complete for statements
 
-See also [ADBT v2.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v2.0.0) for internal Aria changes.
+> 🦄 See also [ADBT v2.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v2.0.0) for internal ADBT changes.
 
 <br>
 
