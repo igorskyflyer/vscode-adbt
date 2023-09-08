@@ -55,9 +55,9 @@
 
 <p align="right"><em>19-Aug-2023</em></p>
 
-#### [ADBT v1.1.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0)
-
 - **🪅 feat**: support for Expires field in meta files
+
+> 🦄 See also [ADBT v1.1.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0) for internal ADBT changes.
 
 <br>
 
