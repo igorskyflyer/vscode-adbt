@@ -6,6 +6,11 @@ import { getComments } from './comments'
 import { getDirectives } from './directives'
 import { getAriaFunctions } from './functions'
 import { tokenType } from './tokenType'
+import { getAriaMetaProps } from './metaProps'
+
+// cache these
+const expInclude = /(import|include)\s+'([^']*)'/i
+const expMeta = /^meta\s+/i
 
 export function provideCompletionItems(
   document: vscode.TextDocument,
@@ -15,8 +20,8 @@ export function provideCompletionItems(
   const lineText: string = document.lineAt(position.line).text
   const textBeforeCursor: string = lineText.substring(0, position.character)
 
-  const expInclude = /(import|include)\s+'([^']*)'/i
   const matchInclude = lineText.match(expInclude)
+  const matchMeta = lineText.match(expMeta)
 
   if (textBeforeCursor.startsWith('[')) {
     items.push(...getDirectives())
@@ -44,6 +49,8 @@ export function provideCompletionItems(
     ) {
       items.push(...getAriaActions())
     }
+  } else if (matchMeta) {
+    items.push(...getAriaMetaProps())
   } else if (textBeforeCursor.indexOf("'") === -1) {
     items.push(...getAriaFunctions(), ...getComments())
   }
