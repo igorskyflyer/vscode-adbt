@@ -1,14 +1,26 @@
 ## 📒 Changelog
 
-### of [ADBT](https://github.com/igorskyflyer/vscode-adbt)
+### of [ADBT for VS Code](https://github.com/igorskyflyer/vscode-adbt)
+
+<br>
+
+## v1.4.0
+
+<p align="right"><em>09-Sep-2023</em></p>
+
+- **🪅 feat**: add support for new [meta](https://github.com/metaigorskyflyer/file-format-adbt#meta) statement
+- **🪅 feat**: add support ADBT version directive
+- **🪅 feat**: add support for compound statements
+- **🪅 feat**: add hover info for all keywords/types
+- **✅ fix**: fix auto-complete for statements
+
+See also [ADBT v2.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v2.0.0) for internal Aria changes.
 
 <br>
 
 ## v1.3.0
 
 <p align="right"><em>25-Aug-2023</em></p>
-
-#### [ADBT v1.3.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.3.0)
 
 - **🪅 feat**: implement Actions for **`include`** and **`import`** statements
 
