@@ -102,7 +102,8 @@
 
 - **🪅 feat**: add file type icon
 
-<br>
+> 🦄 See also [ADBT v1.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.0) for internal ADBT changes.
+
 <br>
 
 ## v1.0.1
