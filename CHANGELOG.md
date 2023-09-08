@@ -121,3 +121,5 @@
 <p align="right"><em>27-Jul-2023</em></p>
 
 - **🚀 launch**: initial release 🎉
+
+> 🦄 See also [ADBT v1.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.0) for internal ADBT changes.
