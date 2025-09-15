@@ -111,7 +111,7 @@ npm i "@igor.dvlpr/aria"
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/vscode-adbt/blob/main/LICENSE).
+Licensed under the [GPLv3 license](https://github.com/igorskyflyer/vscode-adbt/blob/main/LICENSE).
 
 ---
 
